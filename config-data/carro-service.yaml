@@ -1,4 +1,11 @@
 server:
   port: 8086
-spring:
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8089/eureka
+    instance:
+      hostname: localhost
   
